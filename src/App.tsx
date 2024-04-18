@@ -1,19 +1,20 @@
 import React from 'react';
-import logo from './logo.svg'
-import AddItem from './components/add-item';
-import './App.css'; import { HashRouter, Route, Routes } from 'react-router-dom';
-import Welcome from './components/welcome';
-;
+import './App.css';
+import { HashRouter, Link, Navigate, Route, Routes } from 'react-router-dom';
+import Main from './Main';
 
 function App() {
   return (
     <div className="App">
+      {/* <header className="App-header">
+        <p>
+          Storefruntttt
+        </p>
+      </header> */}
       <HashRouter>
         <Routes>
-          <Route path="/add-item"
-            element={<AddItem />} />
-          <Route path="/"
-            element={<Welcome />} />
+          <Route path="/" element={<Navigate to="Main" />} />
+          <Route path="Main/*" element={<Main />} />
         </Routes>
       </HashRouter>
     </div>

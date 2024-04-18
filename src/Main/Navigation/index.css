@@ -1,0 +1,83 @@
+.wd-storefrunt {
+    border-right: 1px solid lightgray;
+    width: 280px;
+    position: fixed;
+    height: 100%;
+    /* overflow-y: auto; */
+}
+
+.wd-storefrunt-logo {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 280px;
+    font-size: 2em;
+}
+
+.wd-storefrunt-navigation {
+    list-style: none;
+    padding: 0px;  
+    margin: 0px;
+    width: 280px;
+}
+
+.wd-storefrunt-navigation li {
+    padding: 10px;     
+    margin-bottom: 12px;
+    font-size: 1em;  
+    text-align: left;
+}
+
+.wd-storefrunt-navigation li .wd-storefrunt-icon-label {
+    display: flex;
+}
+
+.wd-storefrunt-navigation li a {
+    color: black;
+    text-decoration: none;
+    transition: var(--tran-04);
+}
+
+.wd-storefrunt-navigation li a:hover {
+    background: var(--primary-color);
+}
+
+.wd-storefrunt-navigation li.wd-active a {
+    color: red;    
+}
+
+.wd-storefrunt-navigation li a .wd-icon {
+    color: black;
+    text-decoration: none;
+    margin-right: 30px;
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+.wd-storefrunt-navigation li a .wd-icon .wd-icon-profile {
+    color: black;
+    text-decoration: none;
+    margin-left: 2px;
+    margin-top: 8px;
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%; 
+    border-color: red;
+    border-width: 0.5em;
+    overflow: hidden; 
+}
+.wd-storefrunt-navigation li a .wd-label {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding-top: 8px;
+}
+
+.wd-storefrunt-navigation li.wd-active a .wd-icon {
+    color: red;
+    margin-right: 30px;
+}
+.wd-storefrunt-navigation li.wd-active a .wd-label {
+    color: red;
+    padding-top: 8px;
+}

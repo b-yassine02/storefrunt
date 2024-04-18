@@ -1,0 +1,111 @@
+.profile-top {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.profile-circle {
+    width: 180px; 
+    height: 180px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin: 30px;
+    margin-top: 60px;
+    margin-left: 300px;
+}
+
+.profile-info {
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.info_1 {
+    display: flex;
+}
+
+.following {
+    margin-left: 30px;
+    margin-top: 21.44px;
+    margin-bottom: 21.44px;
+    font-size: 1em;
+    border-radius: 10%;
+    border-width: 0px;
+    font-weight: bold;
+    width: 120px;
+    height: 35px;
+}
+
+.message {
+    margin-left: 10px;
+    margin-top: 21.44px;
+    margin-bottom: 21.44px;
+    font-size: 1em;
+    border-radius: 10%;
+    border-width: 0px;
+    font-weight: bold;
+    width: 120px;
+}
+
+.add-friends {
+    margin-left: 10px;
+    margin-top: 21.44px;
+    margin-bottom: 21.44px;
+    font-size: 1em;
+    border-radius: 10%;
+    border-width: 0px;
+    font-weight: bold;
+    width: 80px;
+}
+
+.info_2 {
+    display: flex;
+}
+
+.post_num {
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.post_info {
+    margin: 20px;
+    margin-left: 0px;
+    font-size: 1em;
+}
+
+.followers_num {
+    margin: 20px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.followers_info {
+    margin: 20px;
+    margin-left: 0px;
+    font-size: 1em;
+}
+
+.following_num {
+    margin: 20px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.following_info {
+    margin: 20px;
+    margin-left: 0px;
+    font-size: 1em;
+}
+
+.info_3 {
+    margin-top: 22px;
+    text-align: left;
+}
+
+.profile-bottom {
+    margin-left: 265px;
+    margin-right: 260px;
+}
+
+.card-img-top {
+    height: 300px;
+    width: 300px;
+
+}
