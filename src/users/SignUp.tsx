@@ -1,0 +1,81 @@
+import React from 'react';
+import logo from './logo.svg';
+
+function SignUp() {
+  return (
+    <React.Fragment>
+      <div id="wrapper">
+        <div className="container">
+          <div className="phone-app-demo" />
+          <div className="form-data">
+            <form action="">
+              <div className="logo">
+                <h1>Storefrunt</h1>
+              </div>
+              <input
+                type="text"
+                placeholder="Mobile Number or Email"
+              />
+              <input type="text" placeholder="Full Name" />
+              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Password" />
+              <button className="form-btn" type="submit">
+                Sign Up
+              </button>
+            
+            </form>
+            <div className="sign-up">
+              Already have an account? <a href="#">Sign In</a>
+            </div>
+            <div className="get-the-app">
+              <span>Get the app</span>
+              <div className="badge">
+                <img
+                  src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png"
+                  alt="android App"
+                />
+                <img
+                  src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png"
+                  alt="ios app"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <div className="container">
+            <nav className="footer-nav">
+              <ul>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
+                <li>
+                  <a href="#">Jobs</a>
+                </li>
+                <li>
+                  <a href="#">Privacy</a>
+                </li>
+                <li>
+                  <a href="#">Terms</a>
+                </li>
+                <li>
+                  <a href="#">Profiles</a>
+                </li>
+                <li>
+                  <a href="#">Languages</a>
+                </li>
+              </ul>
+            </nav>
+            <div className="copyright-notice">&copy; 2024 Complaints</div>
+          </div>
+        </footer>
+      </div>
+    </React.Fragment>
+  );
+};
+
+export default SignUp;
