@@ -1,15 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import AddItem from './components/add-item';
+import './App.css'; import { HashRouter, Route, Routes } from 'react-router-dom';
+import Welcome from './components/welcome';
+;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Storefruntttt
-        </p>
-      </header>
+      <HashRouter>
+        <Routes>
+          <Route path="/add-item"
+            element={<AddItem />} />
+          <Route path="/"
+            element={<Welcome />} />
+        </Routes>
+      </HashRouter>
     </div>
   );
 }
