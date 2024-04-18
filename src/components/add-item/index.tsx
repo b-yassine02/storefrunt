@@ -98,12 +98,13 @@ function AddItem() {
                 </select>
                 <br />
                 <br />
-                <p>Note for family & friends:</p>
+                <p>Product description: </p>
                 <input placeholder='Size, Color, etc.'></input>
                 <br />
                 <br />
-                <button>Save Item</button>
-                <br />
+                <p>Product price: </p>
+                <input placeholder='$10'></input>
+                {/* <br />
                 <br />
                 <span>Quantity</span>
                 <br />
@@ -111,7 +112,7 @@ function AddItem() {
                 &nbsp;
                 {quantity}
                 &nbsp;
-                <button onClick={incrementQuantity}> + </button>
+                <button onClick={incrementQuantity}> + </button> */}
                 <br />
                 <br />
                 <button>Save</button>
