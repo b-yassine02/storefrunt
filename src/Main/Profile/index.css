@@ -1,22 +1,26 @@
-.profile-top {
-    display: flex;
-    margin-bottom: 100px;
-    margin-right: 300px;
+.wd-profile {
+    width: 100%;
 }
 
-.profile-circle {
-    width: 180px; 
-    height: 180px;
+.wd-profile-top {
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 10px;
+}
+
+.wd-profile-circle {
+    width: 150px; 
+    height: 150px;
     border-radius: 50%; 
     overflow: hidden; 
     margin: 30px;
     margin-top: 60px;
-    margin-left: 300px;
+    margin-left: 230px;
 }
 
-.profile-info {
+.wd-profile-info {
     margin-top: 50px;
-    margin-left: 90px;
+    margin-left: 50px;
 }
 
 .info_1 {
@@ -25,29 +29,44 @@
 
 .edit-profile {
     margin-left: 30px;
-    margin-top: 21.44px;
+    margin-top: 16px;
     margin-bottom: 21.44px;
-    font-size: 1em;
+    font-size: 0.9em;
     border-radius: 10%;
     border-width: 0px;
     font-weight: bold;
     width: 120px;
-    height: 35px;
+    height: 32px;
 }
 
 .ad-tools {
     margin-left: 10px;
-    margin-top: 21.44px;
+    margin-top: 16px;
     margin-bottom: 21.44px;
-    font-size: 1em;
+    font-size: 0.9em;
     border-radius: 10%;
     border-width: 0px;
     font-weight: bold;
-    width: 120px;
+    width: 100px;
+    height: 32px;
+}
+
+.admin {
+    margin-left: 10px;
+    margin-top: 16px;
+    margin-bottom: 21.44px;
+    font-size: 0.9em;
+    border-radius: 10%;
+    border-width: 0px;
+    font-weight: bold;
+    width: 80px;
+    height: 32px;
 }
 
 .info_2 {
     display: flex;
+    margin-top: -18px;
+    margin-bottom: 5px;
 }
 
 .post_num {
@@ -84,18 +103,17 @@
     font-size: 1em;
 }
 
-.info_3 {
-    margin-top: 22px;
+.wd-profile-info .info_3 {
+    margin-top: 0px;
     text-align: left;
 }
 
-.profile-bottom {
-    margin-left: 265px;
-    margin-right: 260px;
+.wd-profile-bottom {
+    margin-left: 170px;
+    /* margin-right: 260px; */
 }
 
-.card-img-top {
-    height: 300px;
-    width: 300px;
-
+.card .card-img-top {
+    height: 250px;
+    width: 250px;
 }

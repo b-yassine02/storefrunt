@@ -4,14 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Other() {
     return (
-        <div className="profile">
-            <div className="profile-top">
-                <div className="profile-circle">
+        <div className="wd-profile">
+            <div className="wd-profile-top">
+                <div className="wd-profile-circle">
                     <img src="/images/duckie.jpg" alt="profile" />
                 </div>
-                <div className="profile-info">
+                <div className="wd-profile-info">
                     <div className="info_1">
-                        <h3 style={{ paddingTop: '20px'}}>Storefrunt</h3>
+                        <h5 style={{ paddingTop: '20px'}}>Storefrunt</h5>
                         <button type="button" className="following">Following</button>
                         <button type="button" className="message">Message</button>
                         <button type="button" className="add-friends">Add?</button>
@@ -35,11 +35,11 @@ function Other() {
                     </div>
                 </div> 
             </div> 
-            <hr className="mx-auto" style={{ width: '980px', }}/>
-            <div className="profile-bottom">
+            <hr className="mx-auto" style={{ width: '70%', }}/>
+            <div className="wd-profile-bottom">
                 <div className="row">
                     <div className="row row-cols-1 row-cols-md-5 g-4">
-                        <div className="col" style={{ width: 331, display: "flex" }}>
+                        <div className="col" style={{ width: 280, display: "flex" }}>
                             <div className="card">
                                 <img src='images/P13.jpeg' className="card-img-top" alt="card-img"></img>
                                 <div className="card-body">
@@ -47,7 +47,7 @@ function Other() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col" style={{ width: 331, display: "flex" }}>
+                        <div className="col" style={{ width: 280, display: "flex" }}>
                             <div className="card">
                                 <img src='images/P11.jpeg' className="card-img-top" alt="card-img"></img>
                                 <div className="card-body">
@@ -55,7 +55,7 @@ function Other() {
                                 </div>
                             </div>
                         </div>                        
-                        <div className="col" style={{ width: 331, display: "flex" }}>
+                        <div className="col" style={{ width: 280, display: "flex" }}>
                             <div className="card">
                                 <img src='images/P10.jpeg' className="card-img-top" alt="card-img"></img>
                                 <div className="card-body">
@@ -63,7 +63,7 @@ function Other() {
                                 </div>
                             </div>
                         </div>                        
-                        <div className="col" style={{ width: 331, display: "flex" }}>
+                        <div className="col" style={{ width: 280, display: "flex" }}>
                             <div className="card">
                                 <img src='images/P12.jpeg' className="card-img-top" alt="card-img"></img>
                                 <div className="card-body">
