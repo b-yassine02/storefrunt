@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import { Link } from 'react-router-dom';
 import './SignUp.css';
 
-function SignIn() {
+function AdminSignIn() {
   return (
     <React.Fragment>
       <div id="wrapper">
@@ -12,7 +12,7 @@ function SignIn() {
           <div className="form-data">
             <form action="">
               <div className="logo">
-                <h1>Storefrunt</h1>
+                <h1>Storefrunt Admin</h1>
               </div>
               <input
                 type="text"
@@ -24,25 +24,14 @@ function SignIn() {
                 Log in
               </button>
               <span className="has-separator">Or</span>
-              <a className="password-reset" href="#">
-                Forgot password?
-              </a>
+            <Link to={`/users/SignIn`}  className="password-reset">Sign In as a User</Link>
+                
             </form>
-            <div className="sign-up">
-              Don't an account? <Link to={`/users/SignUp`}>Sign up</Link>
-            </div>
-            <div className="sign-up">
-              Are you an Admin? <Link to={`/users/AdminSignIn`}>Admin</Link>
-            </div>
-            <div className="get-the-app">
-              <span>Get the app</span>
-            </div>
           </div>
         </div>
-
       </div>
     </React.Fragment>
   );
 };
 
-export default SignIn;
+export default AdminSignIn;
