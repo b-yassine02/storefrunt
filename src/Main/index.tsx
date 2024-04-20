@@ -6,6 +6,7 @@ import Navigation from "./Navigation";
 import Profile from "./Profile";
 import Explore from "./Explore";
 import Other from "./Other";
+import Admin from "./Admin";
 
 function Main() {
     return (
@@ -23,6 +24,7 @@ function Main() {
                         <Route path="Create/*" element={<Create />} />
                         <Route path="Explore/*" element={<Explore />} />
                         <Route path="Other/*" element={<Other />} />
+                        <Route path= "Admin/*" element={<Admin />} />
                     </Routes>
                 </div>
             </div>
