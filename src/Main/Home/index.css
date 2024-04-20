@@ -1,0 +1,97 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container styling to mimic wd-storefrunt */
+  .container {
+    border: 1px solid lightgray;
+    width: auto;  /* Adjusted to suit the content of an Instagram post */
+    margin: 20px auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;  /* Adjust as necessary */
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  /* Header styling to mimic wd-storefrunt logo */
+  .post-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .username {
+    font-size: 2em; /* Adjusted to match wd-storefrunt-logo */
+    color: black; /* Standard text color */
+  }
+  
+  /* Post image styling to mimic wd-storefrunt layout */
+  .phone-app-demo {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  
+  .post-image {
+    width: auto;
+    height: auto;
+    display: block;
+    max-width: 100%;  /* Ensures the image is never wider than its container */
+    display: block;  
+  }
+  
+  /* Post actions styling using wd-storefrunt-navigation style */
+  .post-actions {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    list-style: none;
+  }
+  
+  .form-btn {
+    padding: 10px; /* Padding similar to wd-storefrunt-navigation li */
+    font-size: 1em;
+    background-color: #f0f0f0; /* Neutral background */
+    color: black; /* Standard text color */
+    border: none;
+    border-radius: 0; /* Flat design */
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .form-btn:hover {
+    background-color: var(--primary-color); /* Assumes a primary color variable is set */
+  }
+  
+  .like-button, .comment-button {
+    margin-right: 30px; /* Right margin for spacing */
+  }
+  
+  /* Likes count and caption styling */
+  .likes-count, .caption {
+    margin-top: 10px;
+    font-size: 1.2em; /* Similar to wd-label */
+    color: black; /* Standard text color */
+  }
+  
+  .caption {
+    font-size: 1.4em; /* Slightly larger for emphasis */
+    color: black; /* Standard text color */
+  }
+  
