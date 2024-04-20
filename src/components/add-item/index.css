@@ -1,0 +1,26 @@
+.background-container {
+    background-color: #FFFFFF;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.drag-area {
+    background-color: #FAFAFA;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    height: 80%;
+    width: 30%;
+    margin: auto;
+    padding: 2%;
+}
+
+.select-files-button {
+    background-color: #3797EF;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: solid 1px #3797EF;
+}
