@@ -8,7 +8,7 @@
   /* Container styling to mimic wd-storefrunt */
   .container {
     border: 1px solid lightgray;
-    width: 600px;  /* Adjusted to suit the content of an Instagram post */
+    width: auto;  /* Adjusted to suit the content of an Instagram post */
     margin: 20px auto;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -40,14 +40,19 @@
   
   /* Post image styling to mimic wd-storefrunt layout */
   .phone-app-demo {
+    overflow: hidden;
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 20px;
+
   }
   
   .post-image {
-    width: 100%;
+    width: auto;
     height: auto;
     display: block;
+    max-width: 100%;  /* Ensures the image is never wider than its container */
+    display: block;  
   }
   
   /* Post actions styling using wd-storefrunt-navigation style */
