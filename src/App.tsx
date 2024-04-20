@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import SignIn from './users/SignIn';
+import AdminSignIn from './users/AdminSignIn';
 import { HashRouter } from "react-router-dom";
 import { Routes, Route, Navigate } from "react-router";
 import SignUp from './users/SignUp';
@@ -17,6 +18,8 @@ function App() {
             element={<SignIn />} />
              <Route path="/users/SignUp"
             element={<SignUp />} />
+            <Route path="/users/adminSignIn"
+            element={<AdminSignIn />} />
         </Routes>
       </HashRouter>
     </div>

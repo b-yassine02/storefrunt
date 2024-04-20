@@ -1,129 +1,313 @@
-/* Container styles */
+/*importing Google font*/
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+
+/*Html rakup styling*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+/*Smartphone image*/
+img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+/*link styling*/
+a {
+  text-decoration: none;
+}
+
+/*Logo styling*/
+h1 {
+  font-size: 40px;
+}
+
+/*body background color*/
+body {
+  background-color: #fafafa;
+}
+
+/*Wrapper is like a container of body*/
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
 .container {
-    height: 100vh;
+  width: 100%;
+  max-width: 93.5rem;
+  margin: 3rem auto 0;
+}
+
+#wrapper > .container {
+  display: flex;
+  padding: 0 8rem;
+}
+
+/*smartphone image*/
+.phone-app-demo {
+  height: 61.8rem;
+  background: url("https://uditsolutions.in/babamachine/wp-content/uploads/2019/08/phone.png")
+    center no-repeat;
+  flex: 1;
+}
+
+/*form styling*/
+.form-data {
+    width: 100%;
+    max-width: 35rem;  /* Controls the maximum width of the form */
+    margin-top: 3rem;  /* Margin from the top of the viewport or its container */
+  }
+  
+  .form-data form {
+    background-color: #fff;  /* White background for the form */
+    border: 2px solid #eee;  /* Light grey border around the form */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;  /* Arranges form elements in a column */
+    padding: 1rem 2rem;  /* Reduced padding to make the form shorter */
+    text-align: center;  /* Centers the text and elements within the form */
+    height: auto;  /* Allows the form to adjust its height based on its content */
   }
-  
-  @media (max-width: 450px) {
-    .container {
-      align-items: flex-start;
-    }
+
+/*logo again styling*/
+.logo h1 {
+  /*width: 17.5rem;*/
+  margin-bottom: 2.5rem;
+}
+
+/*form input styling*/
+.form-data form input {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid #eee;
+  border-radius: 0.4rem;
+}
+
+.form-btn {
+  margin: 1rem 0 1.5rem;
+  height: 3rem;
+  background-color: #3897f0;
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+/*OR font styling*/
+.has-separator {
+  font-size: 1.3rem;
+  color: #999999;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.has-separator::before,
+.has-separator::after {
+  content: "";
+  position: absolute;
+  background-color: #eee;
+  width: 40%;
+  height: 1.5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.has-separator::before {
+  left: 0;
+}
+
+.has-separator::after {
+  right: 0;
+}
+
+/*FACEBOOK ligin text styling*/
+.facebook-login {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #385185;
+  margin-bottom: 2.5rem;
+}
+
+.facebook-login {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #385185;
+  margin-bottom: 2.5rem;
+}
+
+.facebook-login i {
+  font-size: 2rem;
+  margin-right: 0.7rem;
+}
+
+/*password reset styling*/
+.password-reset {
+  font-size: 1.2rem;
+  color: #003569;
+}
+
+/*signup text styling*/
+.sign-up {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #262626;
+  padding: 2rem 0;
+  background-color: #fff;
+  border: 2px solid #eee;
+  margin: 1rem 0;
+}
+
+.sign-up {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #262626;
+  padding: 2rem 0;
+  background-color: #fff;
+  border: 2px solid #eee;
+  margin: 1rem 0;
+}
+
+.sign-up a {
+  color: #3897f0;
+  font-weight: bold;
+}
+
+/*Play stor and App store image styling*/
+.get-the-app {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.get-the-app span {
+  display: block;
+  margin: 2rem 0;
+  color: #262626;
+}
+
+.badge {
+  width: 100%;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
-  
-  /* Gif styles */
-  .gif {
+}
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.badge img {
+  max-width: 14rem;
+  cursor: pointer;
+}
+
+.badge img:first-child {
+  margin-right: 1rem;
+}
+
+/*Footer link styling*/
+footer {
+  padding: 5rem 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  flex-wrap: wrap;
+  margin-top: 0;
+} */
+
+.footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.footer-nav ul li {
+  margin-right: 1.6rem;
+}
+
+.footer-nav ul li a {
+  color: #003569;
+}
+
+.copyright-notice {
+  color: #999999;
+}
+
+/*responsive styling*/
+@media (max-width: 900px) {
+  .phone-app-demo {
     display: none;
-    margin-right: 100px;
   }
-  
-  @media (min-width: 870px) {
-    .gif {
-      display: block;
-    }
+
+  .form-data {
+    margin: 0 auto;
   }
-  
-  /* FormContainer styles */
-  .form-container {
-    width: 100%;
-    height: auto;
+
+  #wrapper > .container {
+    padding: 0;
   }
-  
-  @media (min-width: 450px) {
-    .form-container {
-      max-width: 350px;
-    }
-  }
-  
-  /* Form styles */
-  .form {
-    background: #fff;
-    width: 100%;
-    border: 1px solid #e6e6e6;
-    border-radius: 4px;
-    padding: 20px 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  @media (max-width: 450px) {
-    .form {
-      background: transparent;
-      border: 0;
-    }
-  }
-  
-  .form hr {
-    width: 100%;
-    color: #e6e6e6;
-    margin: 30px 0;
-  }
-  
-  .form span {
-    text-align: center;
-    color: #999;
-    font-size: 20px;
-    margin: 15px 0;
-  }
-  
-  .form span.footer {
-    font-size: 12px;
-  }
-  
-  .form input {
-    width: 100%;
-    margin-bottom: 7px;
-    padding: 10px 8px;
-    font: 400 13.333px Arial;
-    background-color: #fff;
-    border: 1px solid #e6e6e6;
-    border-radius: 4px;
-  }
-  
-  .form input.button {
-    padding: 9px 9px;
-    background-color: #3897f0;
-    border: 1px solid #3897f0;
-    border-radius: 4px;
-    margin-top: 20px;
-    font: bold 13.333px Arial;
-    color: #fff;
-    cursor: pointer;
-    outline: 0;
-  }
-  
-  .form input.button:hover {
-    background-color: #38ff;
-  }
-  
-  /* Footer styles */
-  .footer {
-    background: #fff;
-    width: 100%;
-    border: 1px solid #e6e6e6;
-    border-radius: 4px;
-    padding: 20px 40px;
-    margin-top: 10px;
-    display: flex;
+
+  footer .container {
+    padding: 0 2rem;
     justify-content: center;
   }
-  
-  @media (max-width: 450px) {
-    .footer {
-      background: transparent;
-      border: 0;
-    }
+
+  .footer-nav ul {
+    justify-content: center;
   }
-  
-  .footer p {
-    color: #999;
-    font-size: 15px;
+
+  .footer-nav ul li {
+    margin-bottom: 1rem;
   }
-  
-  .footer p a {
-    color: #3897f0;
-    text-decoration: none;
+}
+
+@media (max-width: 450px) {
+  #wrapper {
+    padding-top: 0;
   }
-  
+  .form-data form {
+    background-color: transparent;
+    border: none;
+    padding: 0 2rem;
+  }
+  .sign-up {
+    background-color: transparent;
+    border: none;
+    margin: 4rem 0;
+  }
+  footer {
+    padding-bottom: 2rem;
+  }
+}
+
