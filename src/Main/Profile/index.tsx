@@ -12,9 +12,13 @@ function Profile() {
                 <div className="wd-profile-info">
                     <div className="info_1">
                         <h5 style={{ paddingTop: '20px'}}>Storefrunt</h5>
+                        <Link to={`/Main/Edit`}>
                         <button type="button" className="edit-profile">Edit Profile</button>
+                        </Link>
                         <button type="button" className="ad-tools">Ad Tools</button>
+                        <Link to={`/Main/Admin`}>
                         <button type="button" className="admin">Admin</button>
+                        </Link>
                     </div>
                     <div className="info_2">
                         <span style={{  display: 'flex' }}>

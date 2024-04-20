@@ -1,15 +1,22 @@
 import { useState } from "react";
-import { BsTrash3Fill, BsPlusCircleFill, BsFillCheckCircleFill } from "react-icons/bs";
+import { BsTrash3Fill } from "react-icons/bs";
 import "./index.css"
+import { FaArrowRightFromBracket } from "react-icons/fa6";
 
 export default function Admin() {
-    const [users, setUsers] = useState([]);
-    const user = {
-        username: "iron_man", 
-        password: "stark123",
-        email: "tony_stark123@gmail.com",
-        profilePic: ""
-    }
+    //const [users, setUsers] = useState([]);
+    const users = [{
+        username: "iron_man",
+        firstname: "Tony",
+        lastname: "Stark",
+        email: "tony_stark123@gmail.com"
+    },
+    {
+        username: "li.alli",
+        firstname: "Allison",
+        lastname: "Li",
+        email: "lialli@gmail.com"
+    }]
 
     return (
         <div>
@@ -20,22 +27,21 @@ export default function Admin() {
                         <td><b>Username</b></td>
                         <td><b>First Name</b></td>
                         <td><b>Last Name</b></td>
-                        <th>&nbsp;</th>
+                        <td><b>View User Profile</b></td>
+                        <td><b>Delete User</b></td>
                     </tr>
                 </thead>
                 <tbody>
                     {users.map((user: any) => (
                         <tr key={user._id}>
                             <td>{user.username}</td>
-                            <td>{user.firstName}</td>
-                            <td>{user.lastName}</td>
-                            <td>{user.role}</td>
+                            <td>{user.firstname}</td>
+                            <td>{user.lastname}</td>
                             <td className="text-nowrap">
-                                <button className="btn btn-danger me-2" 
-                                // onClick={() => deleteUser(user)}
-                                >
+                                    <FaArrowRightFromBracket />
+                            </td>
+                            <td className="text-nowrap">
                                     <BsTrash3Fill />
-                                </button>
                             </td>
                         </tr>))}
                 </tbody>
