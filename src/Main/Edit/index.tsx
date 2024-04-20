@@ -10,7 +10,7 @@ function Edit() {
     };
     return (
         <div className="heading-edit">
-            <h2>Edit Profile</h2>
+            <h3>Edit Profile</h3>
             <br />
             <div className="pfp-edit">
                 <div className="wd-profile-circle-edit">
@@ -30,25 +30,23 @@ function Edit() {
                 </div>
             </div>
             <br />
-            <br />
-            <h3>Name</h3>
+            <h4>Name</h4>
             <div className="editName-edit">
 
-                <h5 className="firstname-edit">First Name</h5>
+                <h6 className="firstname-edit">First Name</h6>
                 <input className="name-input" type="text" value={user.firstname}/>
                 <br />
                 <br />
-                <h5 className="lastname-edit">Last Name</h5>
+                <h6 className="lastname-edit">Last Name</h6>
                 <input className="name-input" type="text" value={user.lastname}/>
                 <br />
                 <br />
-                <h5>Username</h5>
+                <h6>Username</h6>
                 <input className="name-input" type="text" value={user.username}/>
             </div>
             <br />
             <div className="bio-edit">
-                <h3>Bio</h3>
-                <br />
+                <h4>Bio</h4>
                 <textarea placeholder="Bio">
                     {user.bio}
                 </textarea>
