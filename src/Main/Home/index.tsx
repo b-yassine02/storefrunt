@@ -42,11 +42,15 @@ const InstagramPost: React.FC<PostProps> = ({ username, userImageUrl, postImageU
   {isLiked ? '❤️' : <FaRegHeart className="fs-2"/>} Like
 </button>
       <button className="form-btn comment-button">💬 Comment</button>
+
+
     </div>
     <div className="likes-count">{likes} {likes === 1 ? 'like' : 'likes'}</div>
+
     <div className="caption">
       <span className="username">{username}</span> {caption}
     </div>
+
   </div>
 </body>
 
