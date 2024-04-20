@@ -18,7 +18,7 @@ function App() {
             element={<SignIn />} />
              <Route path="/users/SignUp"
             element={<SignUp />} />
-            <Route path="/users/adminSignIn"
+            <Route path="/users/AdminSignIn"
             element={<AdminSignIn />} />
         </Routes>
       </HashRouter>

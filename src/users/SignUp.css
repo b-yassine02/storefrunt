@@ -2,40 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
 
 /*Html rakup styling*/
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 10px;
-  box-sizing: border-box;
-}
-
-/*Smartphone image*/
-img {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-}
-
-/*link styling*/
-a {
-  text-decoration: none;
-}
-
-/*Logo styling*/
-h1 {
-  font-size: 40px;
-}
-
-/*body background color*/
-body {
-  background-color: #fafafa;
-}
 
 /*Wrapper is like a container of body*/
 #wrapper {
@@ -204,13 +170,13 @@ body {
 .badge {
   width: 100%;
 }
-.App-logo {
+.App-logo1 {
   height: 40vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .App-logo1 {
     animation: App-logo-spin infinite 20s linear;
   }
 }
