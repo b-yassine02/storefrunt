@@ -10,12 +10,12 @@ import { PiHouseBold } from "react-icons/pi";
 
 function Navigation() {
     const links = [
-        { label: "Home",                icon: <PiHouseBold className="fs-2" />          },
-        { label: "Search",              icon: <IoSearch className="fs-2" />             },
-        { label: "Create",              icon: <LuPlusSquare className="fs-2" />         },
-        { label: "Explore",             icon: <MdExplore className="fs-2" />            },
-        { label: "Messages",            icon: <FiMessageSquare className="fs-2" />      },
-        { label: "Notifications",       icon: <FaRegHeart className="fs-2" />           },
+        { label: "Home",                icon: <PiHouseBold className="fs-small" />          },
+        { label: "Search",              icon: <IoSearch className="fs-small" />             },
+        { label: "Create",              icon: <LuPlusSquare className="fs-small" />         },
+        { label: "Explore",             icon: <MdExplore className="fs-small" />            },
+        { label: "Messages",            icon: <FiMessageSquare className="fs-small" />      },
+        { label: "Notifications",       icon: <FaRegHeart className="fs-small" />           },
         { label: "Profile",             icon: 
         <div className="wd-icon-profile">
             <img src="/images/duckie.jpg" alt="profile" />
@@ -44,12 +44,12 @@ function Navigation() {
                     </li>
                     ))}
                 </li>
-                <li className="more-nav" style={{ marginTop: 130 }}>
+                <li className="more-nav" style={{ marginTop: 150 }}>
                     <li className={pathname.includes("More") ? "wd-active" : ""}>
                         <Link to={`/Main/More`}> 
                             <div className="wd-storefrunt-icon-label">
                                 <div className="wd-icon">
-                                    <FaBars className="fs-2" /> 
+                                    <FaBars className="fs-small" /> 
                                 </div>
                                 <div className="wd-label">
                                     More

@@ -1,13 +1,14 @@
 import { useCallback, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
+import "./index.css";
 
 function AddItem() {
-    const [quantity, setQuantity] = useState(1);
-    const incrementQuantity = () => setQuantity(quantity + 1);
-    let decrementQuantity = () => setQuantity(quantity - 1);
-    if (quantity <= 0) {
-        decrementQuantity = () => setQuantity(1);
-    }
+    // const [quantity, setQuantity] = useState(1);
+    // const incrementQuantity = () => setQuantity(quantity + 1);
+    // let decrementQuantity = () => setQuantity(quantity - 1);
+    // if (quantity <= 0) {
+    //     decrementQuantity = () => setQuantity(1);
+    // }
     const onDrop = useCallback((acceptedFiles: Array<File>) => {
         const file = new FileReader();
 
@@ -48,7 +49,7 @@ function AddItem() {
     // }
 
     return (
-        <div className="container-fluid">
+        <div className="background-container container-fluid">
             <h1 className="text-6xl font-black text-center text-slate-900 mb-20">
                 Add an Item to List
             </h1>
@@ -57,15 +58,14 @@ function AddItem() {
             <form className="container-fluid">
 
                 <div className="mb-5">
-                    <label htmlFor="image">Image</label>
-                    <div {...getRootProps()}>
+                    <div {...getRootProps()} className="drag-area">
                         <input {...getInputProps()} />
                         {
                             isDragActive ?
                                 <p>Drop files here</p> :
                                 <>
                                     <p>Drag and drop an image here, or click to</p>
-                                    <button>select files</button>
+                                    <button className="select-files-button">Select Files</button>
                                 </>
                         }
                     </div>
