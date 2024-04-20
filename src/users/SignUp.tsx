@@ -25,7 +25,7 @@ function SignUp() {
             
             </form>
             <div className="sign-up">
-              Already have an account? <a href="#">Sign In</a>
+              Already have an account? <a href="/users/SignIn">Sign In</a>
             </div>
             <div className="get-the-app">
               <span>Get the app</span>
