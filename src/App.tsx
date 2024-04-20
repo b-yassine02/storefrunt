@@ -1,20 +1,22 @@
 import React from 'react';
 import './App.css';
-import { HashRouter, Link, Navigate, Route, Routes } from 'react-router-dom';
+import SignIn from './users/SignIn';
+import { HashRouter } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router";
+import SignUp from './users/SignUp';
 import Main from './Main';
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <p>
-          Storefruntttt
-        </p>
-      </header> */}
       <HashRouter>
         <Routes>
           <Route path="/" element={<Navigate to="Main" />} />
           <Route path="Main/*" element={<Main />} />
+          <Route path="/users/SignIn"
+            element={<SignIn />} />
+             <Route path="/users/SignUp"
+            element={<SignUp />} />
         </Routes>
       </HashRouter>
     </div>

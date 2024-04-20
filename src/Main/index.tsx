@@ -18,13 +18,14 @@ function Main() {
                     <Routes>
                         <Route path="/" element={<Navigate to="Profile" />} />
                         <Route path="Profile/*" element={<Profile />} />
-                        <Route path="Home/*" element={<Home />} />
+                        <Route path="Home/*" element={<Home username={"HansZimmer"} userImageUrl={"hansZimmer.jpg"} postImageUrl={"sunglasses.png"} caption={"just bought these sunglasses!"} />} />
                         <Route path="Search/*" element={<Search />} />
                         <Route path="Create/*" element={<Create />} />
                         <Route path="Explore/*" element={<Explore />} />
                         <Route path="Other/*" element={<Other />} />
                     </Routes>
                 </div>
+
             </div>
         </div>
     )
