@@ -44,7 +44,7 @@ function Navigation() {
                     </li>
                     ))}
                 </li>
-                <li className="more-nav" style={{ marginTop: 150 }}>
+                <li className="more-nav" style={{ marginTop: 120 }}>
                     <li className={pathname.includes("More") ? "wd-active" : ""}>
                         <Link to={`/Main/More`}> 
                             <div className="wd-storefrunt-icon-label">
