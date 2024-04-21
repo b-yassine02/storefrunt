@@ -1,0 +1,52 @@
+.wd-edit-circle {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin: 30px;
+    margin-left: 500px;
+}
+
+.wd-edit-field {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wd-edit-username {
+    margin-top: 3px;
+    margin-left: 30px;
+    margin-right: 60px;
+}
+
+.wd-edit-password {
+    margin-top: 4px;
+    margin-left: 30px;
+    margin-right: 64px;
+}
+
+.wd-edit-firstname {
+    margin-top: 3px;
+    margin-left: 30px;
+    margin-right: 56px;
+    white-space: nowrap;
+}
+
+.wd-edit-lastname {
+    margin-top: 4px;
+    margin-left: 30px;
+    margin-right: 56px;
+    white-space: nowrap;
+}
+
+.wd-edit-email {
+    margin-top: 4px;
+    margin-left: 30px;
+    margin-right: 95px;
+}
+
+.wd-edit-description {
+    margin-top: 4px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
