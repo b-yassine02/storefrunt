@@ -45,6 +45,7 @@ function Profile() {
                 </div> 
             </div> 
             <hr className="mx-auto" style={{ width: '70%', }}/>
+            {/* This should be the list of links or posts */}
             <div className="wd-profile-bottom">
                 <div className="row">
                     <div className="row row-cols-1 row-cols-md-5 g-4">
