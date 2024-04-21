@@ -5,9 +5,15 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 function Profile() {
+    // i'm just setting this as example so please change to whatever works
+    const [user, setUser] = useState({ username: "min_nie", firstname: "Minnie", lastname: "Pooh", 
+        email: "minniepooh02@gmail.com", password: "min123", role: "user"
+    });
+    const [profile, setProfile] = useState({ profile_pic: "minnie.jpeg",
+        description: "I am a corgi, woof woof", followers: [280], following: [180]
+    });
 
     const navigate = useNavigate();
-
     const editprofile = async () => {
         navigate("/Main/Profile/Edit");
     }
@@ -31,16 +37,16 @@ function Profile() {
                             <p className="post_info">posts</p>
                         </span>
                         <span style={{  display: 'flex' }}>
-                            <p className="followers_num">0</p>
+                            <p className="followers_num">{profile.followers}</p>
                             <button className="followers_info">followers</button>
                         </span>
                         <span style={{  display: 'flex' }}>
-                            <p className="following_num">128</p>
+                            <p className="following_num">{profile.following}</p>
                             <p className="following_info">following</p>
                         </span>
                     </div>
                     <div className="info_3">
-                        <div className="other_info">Description?</div>
+                        <div className="other_info">{profile.description}</div>
                     </div>
                 </div> 
             </div> 
@@ -51,7 +57,7 @@ function Profile() {
                     <div className="row row-cols-1 row-cols-md-5 g-4">
                         <div className="col" style={{ width: 280, display: "flex" }}>
                             <div className="card">
-                                <img src='images/P13.jpeg' className="card-img-top" alt="card-img"></img>
+                                <img src={`images/${profile.profile_pic}`} className="card-img-top" alt="card-img"></img>
                                 <div className="card-body">
 
                                 </div>
