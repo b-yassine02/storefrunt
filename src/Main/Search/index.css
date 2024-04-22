@@ -1,0 +1,48 @@
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    font-family: proxima-nova, sans-serif;
+  }
+  
+  .search-bar > form {
+    display: flex;
+  }
+  
+  .search-bar__input {
+    display: flex;
+    flex: 0.8;
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    padding: 1%;
+  }
+  .search-bar__btn {
+    flex: 0.2;
+    color: white;
+    background-color: #3797EF;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.5rem;
+    border-radius: 0  0px 20px 20px;
+    border: 1px solid grey;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease .5s;
+  }
+  
+  .visible {
+    visibility: initial;
+    opacity: 1;
+  }
+  
+  .content li {
+    list-style: none;
+    display: flex;
+  }
