@@ -50,12 +50,12 @@ function AddItem() {
 
     return (
         <div className="background-container container-fluid">
-            <h1 className="text-6xl font-black text-center text-slate-900 mb-20">
+            <h1 className="header text-6xl font-black text-center text-slate-900 mb-20">
                 Add an Item to List
             </h1>
-
+            <hr className="mx-auto" style={{ width: '60%', margin: '2%'}}/>
             {/* <form className="max-w-md border border-gray-200 rounded p-6 mx-auto" onSubmit={handleOnSubmit}> */}
-            <form className="container-fluid">
+            <form className="form container-fluid">
 
                 <div className="mb-5">
                     <div {...getRootProps()} className="drag-area">
@@ -79,15 +79,15 @@ function AddItem() {
 
 
                 <p>Add your link from any store (optional): </p>
-                <input></input>
+                <input className="form-input"></input>
                 <br />
                 <br />
                 <p>Product title: </p>
-                <input></input>
+                <input className="form-input"></input>
                 <br />
                 <br />
                 <p>Select category: </p>
-                <select name="selectedCategory">
+                <select className="form-input" name="selectedCategory">
                     <option value="fashion">Fashion & Apparel</option>
                     <option value="electronics">Electronics</option>
                     <option value="food">Food</option>
@@ -99,11 +99,11 @@ function AddItem() {
                 <br />
                 <br />
                 <p>Product description: </p>
-                <input placeholder='Size, Color, etc.'></input>
+                <input className="form-input" placeholder='Size, Color, etc.'></input>
                 <br />
                 <br />
                 <p>Product price: </p>
-                <input placeholder='$10'></input>
+                <input className="form-input" placeholder='$10'></input>
                 {/* <br />
                 <br />
                 <span>Quantity</span>
@@ -115,9 +115,8 @@ function AddItem() {
                 <button onClick={incrementQuantity}> + </button> */}
                 <br />
                 <br />
-                <button>Save</button>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <button>Cancel</button>
+                <button className="submit-buttons">Save</button>
+                <button className="submit-buttons">Cancel</button>
             </form>
         </div>
     )
