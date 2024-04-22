@@ -34,20 +34,20 @@
 
 /*form styling*/
 .form-data {
-    width: 100%;
-    max-width: 35rem;  /* Controls the maximum width of the form */
-    margin-top: 3rem;  /* Margin from the top of the viewport or its container */
-  }
-  
-  .form-data form {
-    background-color: #fff;  /* White background for the form */
-    border: 2px solid #eee;  /* Light grey border around the form */
-    display: flex;
-    flex-direction: column;  /* Arranges form elements in a column */
-    padding: 1rem 2rem;  /* Reduced padding to make the form shorter */
-    text-align: center;  /* Centers the text and elements within the form */
-    height: auto;  /* Allows the form to adjust its height based on its content */
-  }
+  width: 100%;
+  max-width: 35rem; /* Controls the maximum width of the form */
+  margin-top: 3rem; /* Margin from the top of the viewport or its container */
+}
+
+.form-data form {
+  background-color: #fff; /* White background for the form */
+  border: 2px solid #eee; /* Light grey border around the form */
+  display: flex;
+  flex-direction: column; /* Arranges form elements in a column */
+  padding: 1rem 2rem; /* Reduced padding to make the form shorter */
+  text-align: center; /* Centers the text and elements within the form */
+  height: auto; /* Allows the form to adjust its height based on its content */
+}
 
 /*logo again styling*/
 .logo h1 {
@@ -210,7 +210,7 @@ footer .container {
   font-size: 1.3rem;
   flex-wrap: wrap;
   margin-top: 0;
-} */
+}
 
 .footer-nav ul {
   display: flex;
@@ -276,4 +276,3 @@ footer .container {
     padding-bottom: 2rem;
   }
 }
-
