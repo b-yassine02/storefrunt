@@ -26,6 +26,8 @@ function Main() {
                         <Route path="Explore/*" element={<Explore />} />
                         <Route path="Other/*" element={<Other />} />
                         <Route path= "Admin/*" element={<Admin />} />
+                        <Route path="Other/*" element={<Other />} /> 
+                        {/* Other is what the user will see of other's profile if they click on it*/}
                         <Route path="Profile/Edit/*" element={<EditProfile />} />
                     </Routes>
                 </div>
