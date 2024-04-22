@@ -32,6 +32,9 @@ function Profile() {
                         <Link to={`/Main/Admin`}>
                         <button type="button" className="admin">Admin</button>
                         </Link>
+                        <Link to={`/users/SignIn`}>
+                        <button type="button" className="sign-out">Sign Out</button>
+                        </Link>
                     </div>
                     <div className="info_2">
                         <span style={{  display: 'flex' }}>
