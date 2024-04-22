@@ -1,52 +1,104 @@
-.wd-edit-circle {
-    width: 150px; 
-    height: 150px;
+.heading-edit {
+    padding-top: 50px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.pfp-edit {
+    box-sizing: border-box;
+    display: flex;
+    position: static;
+    align-items: stretch;
+    flex-shrink: 0;
+    flex-direction: row;
+    overflow-y: visible;
+    overflow-x: visible;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-left: 12px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: rgb(239, 239, 239);
+    width: 50%;
+}
+
+.wd-profile-circle-edit {
+    width: 60px; 
+    height: 60px;
     border-radius: 50%; 
     overflow: hidden; 
-    margin: 30px;
-    margin-left: 500px;
 }
 
-.wd-edit-field {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.username-edit {
+    font-size: large;
 }
 
-.wd-edit-username {
-    margin-top: 3px;
-    margin-left: 30px;
-    margin-right: 60px;
+.names-edit {
+    padding-left: 25px;
+    padding-top: 5px;
 }
 
-.wd-edit-password {
-    margin-top: 4px;
-    margin-left: 30px;
-    margin-right: 64px;
+.changepic-edit {
+    position: fixed;
+    right: 575px;
+    top: 115px;
 }
 
-.wd-edit-firstname {
-    margin-top: 3px;
-    margin-left: 30px;
-    margin-right: 56px;
-    white-space: nowrap;
+.changepic-edit button {
+    background-color: rgb(0, 149, 246);
+    width: 125px;
+    border:none;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: medium;
+    border-radius: 10px;
+
+}
+.bio-edit textarea {
+    resize: none;
+    width: 50%;
+    height: 75px;
+    font-size: medium;
+    padding-top: 10px;
+    padding-left: 15px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-.wd-edit-lastname {
-    margin-top: 4px;
-    margin-left: 30px;
-    margin-right: 56px;
-    white-space: nowrap;
+.editName-edit {
+    padding-top: 10px;
 }
 
-.wd-edit-email {
-    margin-top: 4px;
-    margin-left: 30px;
-    margin-right: 95px;
+
+.name-input {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-width: 1px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: medium;
+    width: 50%;
 }
 
-.wd-edit-description {
-    margin-top: 4px;
-    margin-left: 30px;
-    margin-right: 50px;
+.submit-edit button {
+    background-color: rgb(0, 149, 246);
+    border:none;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: medium;
+    border-radius: 8px;
 }

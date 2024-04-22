@@ -3,8 +3,10 @@ import "./index.css";
 import { useNavigate } from "react-router-dom";
 
 function EditProfile() {
-    const [edit, setEdit] = useState({ username: "", password: "", 
-    firstname: "", lastname: "", email: "", description: "", role: "" });
+    const [edit, setEdit] = useState({
+        username: "", password: "",
+        firstname: "", lastname: "", email: "", description: "", role: ""
+    });
     const navigate = useNavigate();
     // Not sure how you connect or naming things, so 
     // this is just a placeholder for all the method i think needed
@@ -28,51 +30,69 @@ function EditProfile() {
     // }, []);
 
     return (
-        <div className="wd-edit-profile">
-            <div className="wd-edit-circle">
-                    <img src="/images/duckie.jpg" alt="profile" />
-            </div>
+        <div>
             {/* Not sure how you want to add the edit profile picture */}
             {edit && (
-                <div>
-                    <div className="wd-edit-field">
-                        <div className="wd-edit-username">Username</div>
-                        <input className="form-control" value={edit.username} onChange={(e) =>
-                            setEdit({ ...edit, username: e.target.value})
-                        }/>
+                <div className="heading-edit">
+                    <h3>Edit Profile</h3>
+                    <div className="pfp-edit">
+                        <div className="wd-profile-circle-edit">
+                            <img src="/images/duckie.jpg" alt="profile" />
+                        </div>
+                        <div className="names-edit">
+                            <b className="username-edit">{edit.username}</b>
+                            <br />
+                            <div className="fullname-edit">
+                                {edit.firstname}&nbsp;{edit.lastname}
+                            </div>
+                        </div>
+                        <span className="float-end">
+                            <div className="changepic-edit">
+                                <button>
+                                    <b>Change photo</b>
+                                </button>
+                            </div>
+                        </span>
+
                     </div>
-                    <div className="wd-edit-field">
-                        <div className="wd-edit-password">Password</div>
-                        <input type="password" className="form-control" value={edit.password} onChange={(e) =>
-                            setEdit({ ...edit, password: e.target.value})
-                        }/>
+                    <div className="editName-edit">
+
+                        <h6 className="firstname-edit">First Name</h6>
+                        <input className="name-input" type="text" value={edit.firstname} onChange={(e) =>
+                            setEdit({ ...edit, firstname: e.target.value })
+                        } />
+                        <br />
+                        <br />
+                        <h6 className="lastname-edit">Last Name</h6>
+                        <input className="name-input" type="text" value={edit.lastname} onChange={(e) =>
+                            setEdit({ ...edit, lastname: e.target.value })
+                        } />
+                        <br />
+                        <br />
+                        <h6>Username</h6>
+                        <input className="name-input" type="text" value={edit.username} onChange={(e) =>
+                            setEdit({ ...edit, username: e.target.value })
+                        } />
+                        <br />
+                        <br />
+                        <h6>Password</h6>
+                        <input className="name-input" type="text" value={edit.password} onChange={(e) =>
+                            setEdit({ ...edit, password: e.target.value })
+                        } />
                     </div>
-                    <div className="wd-edit-field">
-                        <div className="wd-edit-firstname">First Name</div>
-                        <input className="form-control" value={edit.firstname} onChange={(e) =>
-                            setEdit({ ...edit, firstname: e.target.value})
-                        }/>
+                    <br />
+                    <div className="bio-edit">
+                        <h4>Bio</h4>
+                        <textarea placeholder="Bio" onChange={(e) =>
+                            setEdit({ ...edit, description: e.target.value })
+                        }> 
+                            {edit.description}
+                        </textarea>
                     </div>
-                    <div className="wd-edit-field">
-                        <div className="wd-edit-lastname">Last Name</div>
-                        <input className="form-control" value={edit.lastname} onChange={(e) =>
-                            setEdit({ ...edit, lastname: e.target.value})
-                        }/>
+                    <br />
+                    <div className="submit-edit">
+                        <button><b>Submit</b></button>
                     </div>
-                    <div className="wd-edit-field">
-                        <div className="wd-edit-email">Email</div>
-                        <input className="form-control" value={edit.email} onChange={(e) =>
-                            setEdit({ ...edit, email: e.target.value})
-                        }/>
-                    </div>
-                    <div className="wd-edit-field">
-                        <div className="wd-edit-description">Description</div>
-                        <input className="form-control" value={edit.description} onChange={(e) =>
-                            setEdit({ ...edit, description: e.target.value})
-                        }/>
-                    </div>
-                    <button className="btn btn-success" style={{ marginRight: "10px"}}>Save</button>
-                    <button onClick={cancel} className="btn btn-danger">Cancel</button>
                 </div>
             )}
         </div>

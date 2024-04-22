@@ -6,6 +6,7 @@ import Navigation from "./Navigation";
 import Profile from "./Profile";
 import Explore from "./Explore";
 import Other from "./Other";
+import Admin from "./Admin";
 import EditProfile from "./Profile/Edit";
 
 function Main() {
@@ -23,6 +24,8 @@ function Main() {
                         <Route path="Search/*" element={<Search />} />
                         <Route path="Create/*" element={<Create />} />
                         <Route path="Explore/*" element={<Explore />} />
+                        <Route path="Other/*" element={<Other />} />
+                        <Route path= "Admin/*" element={<Admin />} />
                         <Route path="Other/*" element={<Other />} /> 
                         {/* Other is what the user will see of other's profile if they click on it*/}
                         <Route path="Profile/Edit/*" element={<EditProfile />} />

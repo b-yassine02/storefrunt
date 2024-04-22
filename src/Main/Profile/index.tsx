@@ -29,7 +29,9 @@ function Profile() {
                         <h5 style={{ paddingTop: '20px'}}>Storefrunt</h5>
                         <button type="button" onClick={editprofile} className="edit-profile">Edit Profile</button>
                         <button type="button" className="ad-tools">Ad Tools</button>
+                        <Link to={`/Main/Admin`}>
                         <button type="button" className="admin">Admin</button>
+                        </Link>
                     </div>
                     <div className="info_2">
                         <span style={{  display: 'flex' }}>
