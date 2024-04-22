@@ -19,7 +19,7 @@ function AddItem() {
         file.readAsDataURL(acceptedFiles[0])
     }, [])
 
-    const { acceptedFiles, getRootProps, getInputProps, isDragActive } = useDropzone({
+    const { getRootProps, getInputProps, isDragActive } = useDropzone({
         onDrop
     });
 
