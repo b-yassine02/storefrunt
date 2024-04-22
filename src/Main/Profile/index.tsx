@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
 import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Profile() {
+
+    const navigate = useNavigate();
+
+    const editprofile = async () => {
+        navigate("/Main/Profile/Edit");
+    }
+
     return (
         <div className="wd-profile">
             <div className="wd-profile-top">
@@ -12,9 +21,7 @@ function Profile() {
                 <div className="wd-profile-info">
                     <div className="info_1">
                         <h5 style={{ paddingTop: '20px'}}>Storefrunt</h5>
-                        <Link to={`/Main/Edit`}>
-                        <button type="button" className="edit-profile">Edit Profile</button>
-                        </Link>
+                        <button type="button" onClick={editprofile} className="edit-profile">Edit Profile</button>
                         <button type="button" className="ad-tools">Ad Tools</button>
                         <Link to={`/Main/Admin`}>
                         <button type="button" className="admin">Admin</button>
@@ -27,7 +34,7 @@ function Profile() {
                         </span>
                         <span style={{  display: 'flex' }}>
                             <p className="followers_num">0</p>
-                            <p className="followers_info">followers</p>
+                            <button className="followers_info">followers</button>
                         </span>
                         <span style={{  display: 'flex' }}>
                             <p className="following_num">128</p>
@@ -35,7 +42,7 @@ function Profile() {
                         </span>
                     </div>
                     <div className="info_3">
-                        <div className="other_info">Other Info?</div>
+                        <div className="other_info">Description?</div>
                     </div>
                 </div> 
             </div> 

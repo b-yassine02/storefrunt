@@ -42,8 +42,9 @@
 }
 
 .changepic-edit {
-    padding-left: 235px;
-    padding-top: 13px;
+    position: fixed;
+    right: 575px;
+    top: 115px;
 }
 
 .changepic-edit button {
@@ -74,7 +75,6 @@
 
 .editName-edit {
     padding-top: 10px;
-    padding-left: 20px;
 }
 
 
