@@ -23,8 +23,6 @@ function Main() {
                         <Route path="Home/*" element={<Home username={"HansZimmer"} userImageUrl={"hansZimmer.jpg"} postImageUrl={"sunglasses.png"} caption={"just bought these sunglasses!"} />} />
                         <Route path="Search/*" element={<Search />} />
                         <Route path="Create/*" element={<Create />} />
-                        <Route path="Explore/*" element={<Explore />} />
-                        <Route path="Other/*" element={<Other />} />
                         <Route path= "Admin/*" element={<Admin />} />
                         <Route path="Other/*" element={<Other />} /> 
                         {/* Other is what the user will see of other's profile if they click on it*/}
