@@ -9,7 +9,7 @@ function View() {
           <div className="container">
             <header className="post-header">
               <img
-                src="images/hansZimmer.JPG"
+                src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Hans-Zimmer-profile.jpg"
                 alt="View"
                 className="user-image"
               />
@@ -17,7 +17,7 @@ function View() {
             </header>
             <div className="phone-app-demo">
               <img
-                src="images/sunglasses.png"
+                src="https://www.quayaustralia.com/cdn/shop/files/Quay_VibeCheck_BlackBlackPol_Front_694905f5-7990-4516-8169-dc14b645c1e8.jpg?v=1713564585&width=2000"
                 alt="sunglass"
                 className="post-image"
               />
