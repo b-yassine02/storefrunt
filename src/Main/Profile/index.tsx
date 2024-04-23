@@ -66,7 +66,13 @@ function Profile() {
       user_id: user._id,
     });
     setProfile(profile);
+
+    const users = await userClient.findUserById({
+        user_id: user._id,
+    });
+    setUser(users);
   };
+
 
   useEffect(() => {
     fetchProfile();
@@ -85,7 +91,8 @@ function Profile() {
         </div>
         <div className="wd-profile-info">
           <div className="info_1">
-            <h5 style={{ paddingTop: "20px" }}>Storefrunt</h5>
+            {/* <h5 style={{ paddingTop: "20px" }}>Storefrunt</h5> */}
+            <h5 style={{ paddingTop: "20px" }}>{user.username}</h5>
             <button
               type="button"
               onClick={editprofile}
