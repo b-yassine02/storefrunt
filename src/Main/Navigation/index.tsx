@@ -24,13 +24,16 @@ function Navigation() {
   });
 
   const fetchProfile = async () => {
-    // uncomment when it gets pushed to repo
-    const user = await userClient.profile();
-    if (user) {
-      const profile = await profileClient.findProfileByUserId({
-        user_id: user._id,
-      });
-      setProfile(profile);
+    try {
+      const user = await userClient.profile();
+      if (user) {
+        const profile = await profileClient.findProfileByUserId({
+          user_id: user._id,
+        });
+        setProfile(profile);
+      }
+    } catch (error) {
+      console.log(error);
     }
   };
 
