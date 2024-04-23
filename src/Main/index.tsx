@@ -8,6 +8,7 @@ import Explore from "./Explore";
 import Other from "./Other";
 import Admin from "./Admin";
 import EditProfile from "./Profile/Edit";
+import View from "./View";
 
 function Main() {
   return (
@@ -18,13 +19,14 @@ function Main() {
         </div>
         <div style={{ flexGrow: 1, marginLeft: 280 }}>
           <Routes>
-            <Route path="/" element={<Navigate to="Profile" />} />
+            <Route path="/" element={<Navigate to="View" />} />
             <Route path="Profile/*" element={<Profile />} />
             <Route path="Home/*" element={<Home />} />
             <Route path="Search/*" element={<Search />} />
             <Route path="Create/*" element={<Create />} />
             <Route path="Admin/*" element={<Admin />} />
             <Route path="Other/*" element={<Other />} />
+            <Route path="View/*" element={<View />} />
             {/* Other is what the user will see of other's profile if they click on it*/}
             <Route path="Profile/Edit/*" element={<EditProfile />} />
           </Routes>
