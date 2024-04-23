@@ -26,10 +26,12 @@ function Navigation() {
   const fetchProfile = async () => {
     // uncomment when it gets pushed to repo
     const user = await userClient.profile();
-    const profile = await profileClient.findProfileByUserId({
-      user_id: user._id,
-    });
-    setProfile(profile);
+    if (user) {
+      const profile = await profileClient.findProfileByUserId({
+        user_id: user._id,
+      });
+      setProfile(profile);
+    }
   };
 
   useEffect(() => {
