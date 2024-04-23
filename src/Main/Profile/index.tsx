@@ -12,7 +12,8 @@ import * as postClient from "../../Clients/postClient";
 
 function Profile() {
   const [currentUserId, setCurrentUserId] = useState(
-    "662715966380bcfe90f7ff62"
+    // "662715966380bcfe90f7ff62"
+    "6627c1ea94b3a14d5416ae18"
   );
 
   const [user, setUser] = useState<User>({
