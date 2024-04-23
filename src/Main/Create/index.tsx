@@ -24,16 +24,17 @@ function AddItem() {
   });
 
   const fetchProfile = async () => {
-    // const user = await userClient.profile();
-    const user = await userClient.findUserById({
-      _id: "662715966380bcfe90f7ff62",
-    });
+    const user = await userClient.profile();
+    // const user = await userClient.findUserById({
+    //   _id: "662715966380bcfe90f7ff62",
+    // });
     setCurrentUserId(user._id);
     setPost({ ...post, user_id: user._id });
   };
 
   const navigate = useNavigate();
   const onSave = async () => {
+    console.log("I got here...");
     const response = await postClient.createPost(post);
     console.log(response);
     navigate("/Main/Profile");

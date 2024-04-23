@@ -30,10 +30,10 @@ function EditProfile() {
   });
 
   const fetchProfile = async () => {
-    // const user = await userClient.profile(); // this can replace lines 34-36
-    const user = await userClient.findUserById({
-      _id: "662715966380bcfe90f7ff62",
-    });
+    const user = await userClient.profile(); // this can replace lines 34-36
+    // const user = await userClient.findUserById({
+    //   _id: "662715966380bcfe90f7ff62",
+    // });
     setUser(user);
 
     const profile = await profileClient.findProfileByUserId({

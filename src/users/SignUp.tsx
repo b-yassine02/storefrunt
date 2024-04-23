@@ -17,14 +17,11 @@ function SignUp() {
   const navigate = useNavigate();
   const signup = async () => {
     try {
-      console.log("signing up");
       await userClient.signup(user);
-      console.log("user signed up");
       navigate("/Main/Home");
-      console.log("navigated to home");
     } catch (err: any) {
       console.log(err);
-      setError("there was an error processing your request");
+      setError(err.message);
     }
   };
 

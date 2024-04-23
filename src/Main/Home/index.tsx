@@ -36,9 +36,9 @@ function Home() {
   const [currentUserId, setCurrentUserId] = useState("");
 
   const fetchHome = async () => {
-    // const user = await userClient.profile();
-    // setCurrentUserId(user._id);
-    setCurrentUserId("662715966380bcfe90f7ff62"); // comment this out before going
+    const user = await userClient.profile();
+    setCurrentUserId(user._id);
+    // setCurrentUserId("662715966380bcfe90f7ff62"); // comment this out before going
     const posts: Post[] = await postClient.findAllPosts();
     const users: User[] = await userClient.findAllUsers();
     const profiles: ProfileType[] = await profileClient.findAllProfiles();
