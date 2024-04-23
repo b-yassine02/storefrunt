@@ -10,28 +10,27 @@ import Admin from "./Admin";
 import EditProfile from "./Profile/Edit";
 
 function Main() {
-    return (
-        <div style={{ height: "100%"}}>
-            <div className="d-flex" style={{ display: 'flex', height: '100%' }}>
-                <div>
-                    <Navigation />
-                </div>
-                <div style={{ flexGrow: 1, marginLeft: 280 }}>
-                    <Routes>
-                        <Route path="/" element={<Navigate to="Profile" />} />
-                        <Route path="Profile/*" element={<Profile />} />
-                        <Route path="Home/*" element={<Home username={"HansZimmer"} userImageUrl={"hansZimmer.jpg"} postImageUrl={"sunglasses.png"} caption={"just bought these sunglasses!"} />} />
-                        <Route path="Search/*" element={<Search />} />
-                        <Route path="Create/*" element={<Create />} />
-                        <Route path= "Admin/*" element={<Admin />} />
-                        <Route path="Other/*" element={<Other />} /> 
-                        {/* Other is what the user will see of other's profile if they click on it*/}
-                        <Route path="Profile/Edit/*" element={<EditProfile />} />
-                    </Routes>
-                </div>
-
-            </div>
+  return (
+    <div style={{ height: "100%" }}>
+      <div className="d-flex" style={{ display: "flex", height: "100%" }}>
+        <div>
+          <Navigation />
         </div>
-    )
+        <div style={{ flexGrow: 1, marginLeft: 280 }}>
+          <Routes>
+            <Route path="/" element={<Navigate to="Profile" />} />
+            <Route path="Profile/*" element={<Profile />} />
+            <Route path="Home/*" element={<Home />} />
+            <Route path="Search/*" element={<Search />} />
+            <Route path="Create/*" element={<Create />} />
+            <Route path="Admin/*" element={<Admin />} />
+            <Route path="Other/*" element={<Other />} />
+            {/* Other is what the user will see of other's profile if they click on it*/}
+            <Route path="Profile/Edit/*" element={<EditProfile />} />
+          </Routes>
+        </div>
+      </div>
+    </div>
+  );
 }
 export default Main;
