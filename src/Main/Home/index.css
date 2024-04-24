@@ -34,8 +34,8 @@
 }
 
 .username {
-  font-size: 2em; /* Larger font for emphasis */
-  color: black; /* Ensures visibility against light backgrounds */
+  font-size: 1em; /* Larger font for emphasis */
+  color: black; /* çEnsures visibility against light backgrounds */
 }
 
 /* Post image container styling */
