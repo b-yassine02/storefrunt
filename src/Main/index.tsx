@@ -25,6 +25,7 @@ function Main() {
   //   }
   // );
   const [other, setOther] = useState<String>("");
+  console.log(other);
 
   return (
     <div style={{ height: "100%" }}>
