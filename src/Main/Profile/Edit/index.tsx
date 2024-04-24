@@ -64,7 +64,7 @@ function EditProfile() {
           <h3>Edit Profile</h3>
           <div className="pfp-edit">
             <div className="wd-profile-circle-edit">
-              <img src="/images/duckie.jpg" alt="profile" />
+            <img src={profile.profile_pic} alt="profile" />
             </div>
             <div className="names-edit">
               <b className="username-edit">{user.username}</b>
