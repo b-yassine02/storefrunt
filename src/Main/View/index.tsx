@@ -1,5 +1,7 @@
 import { FaRegHeart } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { FaRegComment } from "react-icons/fa6";
+
 import "./index.css";
 
 function View() {
@@ -27,7 +29,7 @@ function View() {
                 className="form-btn like-button">
                 <FaRegHeart className="fs-2" /> Like
               </button>
-              <button className="form-btn comment-button">💬 Comment</button>
+              <button className="form-btn"> <FaRegComment className="fs-2" /> Comment</button>
             </div>
             <div className="likes-count">
               1 like

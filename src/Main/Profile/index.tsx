@@ -87,11 +87,10 @@ function Profile() {
     <div className="wd-profile">
       <div className="wd-profile-top">
         <div className="wd-profile-circle">
-          <img src={`images/${profile.profile_pic}`} alt="profile" />
+          <img src={profile.profile_pic} alt="profile" />
         </div>
         <div className="wd-profile-info">
           <div className="info_1">
-            <h5 style={{ paddingTop: "20px" }}>Storefrunt</h5>
             <h5 style={{ paddingTop: "20px" }}>{user.username}</h5>
             <button
               type="button"

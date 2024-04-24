@@ -9,8 +9,22 @@ import Other from "./Other";
 import Admin from "./Admin";
 import EditProfile from "./Profile/Edit";
 import View from "./View";
+import { User } from "../Clients/userClient";
+import { useState } from "react";
 
 function Main() {
+  const [other, setOther] = useState<User>(
+    {
+      _id: "",
+      username: "",
+      firstname: "",
+      lastname: "",
+      email: "",
+      password: "",
+      role: "",
+    }
+  );
+
   return (
     <div style={{ height: "100%" }}>
       <div className="d-flex" style={{ display: "flex", height: "100%" }}>
@@ -22,10 +36,12 @@ function Main() {
             <Route path="/" element={<Navigate to="View" />} />
             <Route path="Profile/*" element={<Profile />} />
             <Route path="Home/*" element={<Home />} />
-            <Route path="Search/*" element={<Search />} />
+            <Route path="Search/*" element={<Search 
+              setOther={setOther}/>} />
             <Route path="Create/*" element={<Create />} />
             <Route path="Admin/*" element={<Admin />} />
-            <Route path="Other/*" element={<Other />} />
+            <Route path="Other/*" element={<Other 
+              other={other}/>} />
             <Route path="View/*" element={<View />} />
             {/* Other is what the user will see of other's profile if they click on it*/}
             <Route path="Profile/Edit/*" element={<EditProfile />} />

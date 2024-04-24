@@ -9,13 +9,12 @@
 }
 
 .wd-profile-circle {
-    width: 150px; 
-    height: 150px;
+    width: 150px;
+    height: 170px;
+    border-radius: 50%;
+    margin-right: 10px; 
     border-radius: 50%; 
     overflow: hidden; 
-    margin: 30px;
-    margin-top: 60px;
-    margin-left: 230px;
 }
 
 .wd-profile-info {
