@@ -11,14 +11,14 @@ export default function Admin() {
   const [currentUser, setCurrentUser] = useState<User>();
 
   const fetchUsers = async () => {
-    // const currUser = await userClient.profile();
-    // setCurrentUser(currUser);
+    const currUser = await userClient.profile();
+    setCurrentUser(currUser);
     const users = await userClient.findAllUsers();
     setUsers(users);
   };
 
   const deleteUser = async (id: string) => {
-    if (currentUser?.role !== "admin") {
+    if (currentUser?.role !== "admin" || !currentUser) {
       alert("You do not have permission to delete users");
       return;
     } else {
@@ -67,8 +67,10 @@ export default function Admin() {
               <td className="text-nowrap">
                 <FaArrowRightFromBracket />
               </td>
-              <td className="text-nowrap" onClick={() => deleteUser(user._id)}>
-                <BsTrash3Fill />
+              <td className="text-nowrap">
+                <button onClick={() => deleteUser(user._id)}>
+                  <BsTrash3Fill />
+                </button>
               </td>
             </tr>
           ))}

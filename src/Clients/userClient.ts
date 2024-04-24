@@ -1,6 +1,21 @@
 import axios from "axios";
 
 axios.defaults.withCredentials = true;
+axios.defaults.withCredentials = true;
+axios.defaults.headers.post["Content-Type"] = "application/json";
+axios.defaults.headers.put["Content-Type"] = "application/json";
+axios.defaults.headers.delete["Content-Type"] = "application/json";
+axios.defaults.headers.get["Content-Type"] = "application/json";
+axios.defaults.headers.get["Access-Control-Allow-Origin"] = "*";
+axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
+axios.defaults.headers.put["Access-Control-Allow-Origin"] = "*";
+axios.defaults.headers.delete["Access-Control-Allow-Origin"] = "*";
+axios.defaults.headers.get["Access-Control-Allow-Methods"] =
+  "GET,PUT,POST,DELETE,PATCH,OPTIONS";
+axios.defaults.headers.get["Access-Control-Allow-Headers"] =
+  "Content-Type, Authorization, Content-Length, X-Requested-With";
+axios.defaults.headers.get["Access-Control-Allow-Credentials"] = "true";
+axios.defaults.headers.get["Access-Control-Max-Age"] = "86400";
 
 export const BASE_API = process.env.REACT_APP_API_BASE;
 export const USERS_API = `${BASE_API}/api/users`;
