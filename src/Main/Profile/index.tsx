@@ -87,7 +87,7 @@ function Profile() {
     <div className="wd-profile">
       <div className="wd-profile-top">
         <div className="wd-profile-circle">
-          <img src={`images/${profile.profile_pic}`} alt="profile" />
+          <img src={profile.profile_pic} alt="profile" />
         </div>
         <div className="wd-profile-info">
           <div className="info_1">
