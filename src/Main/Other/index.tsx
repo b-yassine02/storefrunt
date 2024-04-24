@@ -45,13 +45,19 @@ function Other({other} : {other: String}) {
       });
 
     const fetchProfile = async () => {
-        const posts = await postClient.findPostByUserId(other)
+        const posts = await postClient.findPostByUserId(
+            {user_id: other}
+        )
         setUserPosts(posts);
 
-        const profile = await profileClient.findProfileByUserId(other);
+        const profile = await profileClient.findProfileByUserId(
+            {user_id: other}
+        );
         setProfile(profile);
 
-        const user = await userClient.findUserById(other)
+        const user = await userClient.findUserById(
+            {user_id: other}
+        )
         setUser(user);
     }
 
