@@ -25,8 +25,8 @@ export interface ProfileType {
   user_id: string;
   profile_pic: string;
   description: string;
-  followers: [string];
-  following: [string];
+  followers: string[];
+  following: string[];
 }
 
 export const createProfile = async (profile: any) => {

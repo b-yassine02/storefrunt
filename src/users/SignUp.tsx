@@ -3,10 +3,14 @@ import { Link, useNavigate } from "react-router-dom";
 import "./SignUp.css";
 import React, { useState } from "react";
 import * as userClient from "../Clients/userClient";
+import { ProfileType } from "../Clients/profileClient";
+import { User } from "../Clients/userClient";
+import * as profileClient from "../Clients/profileClient";
 
 function SignUp() {
   const [error, setError] = useState("");
-  const [user, setUser] = useState({
+  const [user, setUser] = useState<User>({
+    _id: "",
     username: "",
     password: "",
     email: "",
@@ -14,11 +18,39 @@ function SignUp() {
     lastname: "",
     role: "user",
   });
+
   const navigate = useNavigate();
   const signup = async () => {
     try {
-      await userClient.signup(user);
-      navigate("/users/SignIn");
+      const userResp = await userClient.findUserByEmail({ email: user.email });
+      if (userResp) {
+        alert("User already exists");
+        return;
+      }
+      const userResp2 = await userClient.findUserByUsername({
+        username: user.username,
+      });
+      if (userResp2) {
+        alert("Username already exists");
+        return;
+      }
+      const createUserResp = await userClient.signup(user);
+      console.log(createUserResp);
+
+      let profile: ProfileType = {
+        _id: "",
+        user_id: createUserResp._id,
+        profile_pic:
+          "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+        description: "",
+        followers: [],
+        following: [],
+      };
+
+      const createProfResp = await profileClient.createProfile(profile);
+      console.log(createProfResp);
+
+      navigate("/Main/Home");
     } catch (err: any) {
       console.log(err);
       setError(err.message);
