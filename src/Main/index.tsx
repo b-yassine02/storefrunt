@@ -13,17 +13,19 @@ import { User } from "../Clients/userClient";
 import { useState } from "react";
 
 function Main() {
-  const [other, setOther] = useState<User>(
-    {
-      _id: "",
-      username: "",
-      firstname: "",
-      lastname: "",
-      email: "",
-      password: "",
-      role: "",
-    }
-  );
+  // const [other, setOther] = useState<User>(
+  //   {
+  //     _id: "",
+  //     username: "",
+  //     firstname: "",
+  //     lastname: "",
+  //     email: "",
+  //     password: "",
+  //     role: "",
+  //   }
+  // );
+  const [other, setOther] = useState<String>("");
+  console.log(other);
 
   return (
     <div style={{ height: "100%" }}>
