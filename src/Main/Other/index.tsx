@@ -93,7 +93,7 @@ function Other({other} : {other: String}) {
             </span>
           </div>
           <div className="info_3">
-            <div className="other_info">{profile.description}</div>
+            <div className="other_info">{profile?.description}</div>
           </div>
         </div>
       </div>
