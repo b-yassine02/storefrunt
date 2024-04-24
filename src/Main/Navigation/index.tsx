@@ -52,7 +52,7 @@ function Navigation() {
       label: "Profile",
       icon: (
         <div className="wd-icon-profile">
-          <img src={profile.profile_pic} alt="profile" />
+          <img src={profile?.profile_pic} alt="profile" />
         </div>
       ),
     },
