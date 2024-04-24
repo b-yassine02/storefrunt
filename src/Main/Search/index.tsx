@@ -4,8 +4,9 @@ import { FormEvent, useEffect, useState } from "react";
 import { User } from "../../Clients/userClient";
 import * as userClient from "../../Clients/userClient";
 import { LuWallet } from "react-icons/lu";
+import { FaArrowRightFromBracket } from "react-icons/fa6";
 
-export default function SearchBar() {
+export default function SearchBar({setOther} : {setOther: (other: any) => void;}) {
   // const { text, setText, users } = FillerSearchResults();
   // const contentClass = [text !== "" && "visible", "content"].join(" ");
   // const filteredUsers = users.filter((user) =>
@@ -32,6 +33,10 @@ export default function SearchBar() {
     setAll(all);
   }
 
+  const addOther = async (user: User) => {
+    setOther(user);
+  }
+
   useEffect(() => {
     fetchAll();
   }, []);
@@ -55,7 +60,10 @@ export default function SearchBar() {
           </button>
           <div>
             {all.map((user) => {
-              return <li>{user.username}</li>
+              return <div>
+                {user.username}
+                <button onClick={() => addOther(user)}><FaArrowRightFromBracket /></button>
+                </div>
             })}
           </div>
         {/* </form> */}
