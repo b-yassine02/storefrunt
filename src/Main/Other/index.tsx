@@ -84,11 +84,11 @@ function Other({other} : {other: String}) {
               <p className="post_info">posts</p>
             </span>
             <span style={{ display: "flex" }}>
-              <p className="followers_num">{profile.followers.length}</p>
+              <p className="followers_num">{profile?.followers?.length}</p>
               <p className="followers_info">followers</p>
             </span>
             <span style={{ display: "flex" }}>
-              <p className="following_num">{profile.following.length}</p>
+              <p className="following_num">{profile?.following?.length}</p>
               <p className="following_info">following</p>
             </span>
           </div>
