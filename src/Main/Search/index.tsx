@@ -5,8 +5,10 @@ import { User } from "../../Clients/userClient";
 import * as userClient from "../../Clients/userClient";
 import { LuWallet } from "react-icons/lu";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
+import { Navigate, useNavigate } from "react-router-dom";
 
 export default function SearchBar({setOther} : {setOther: (other: String) => void;}) {
+  const navigate = useNavigate();
   // const { text, setText, users } = FillerSearchResults();
   // const contentClass = [text !== "" && "visible", "content"].join(" ");
   // const filteredUsers = users.filter((user) =>
@@ -35,6 +37,7 @@ export default function SearchBar({setOther} : {setOther: (other: String) => voi
 
   const addOther = async (user: String) => {
     setOther(user);
+    navigate("/Main/Other");
   }
 
   useEffect(() => {
