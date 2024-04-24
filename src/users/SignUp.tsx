@@ -18,7 +18,7 @@ function SignUp() {
   const signup = async () => {
     try {
       await userClient.signup(user);
-      navigate("/Main/Home");
+      navigate("/users/SignIn");
     } catch (err: any) {
       console.log(err);
       setError(err.message);
