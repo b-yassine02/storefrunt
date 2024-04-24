@@ -9,7 +9,17 @@ import * as postClient from "../../Clients/postClient";
 import { ProfileType } from "../../Clients/profileClient";
 import * as profileClient from "../../Clients/profileClient";
 
-function Other({other} : {other: User}) {
+function Other({other} : {other: String}) {
+
+    const [user, setUser] = useState<User>({
+        _id: "",
+        username: "",
+        firstname: "",
+        lastname: "",
+        email: "",
+        password: "",
+        role: "",
+      });
 
     const [userPosts, setUserPosts] = useState<[Post]>([
         {
@@ -35,11 +45,14 @@ function Other({other} : {other: User}) {
       });
 
     const fetchProfile = async () => {
-        const posts = await postClient.findPostByUserId(other._id)
+        const posts = await postClient.findPostByUserId(other)
         setUserPosts(posts);
 
-        const profile = await profileClient.findProfileByUserId(other._id);
+        const profile = await profileClient.findProfileByUserId(other);
         setProfile(profile);
+
+        const user = await userClient.findUserById(other)
+        setUser(user);
     }
 
     useEffect(() => {
@@ -54,7 +67,7 @@ function Other({other} : {other: User}) {
         </div>
         <div className="wd-profile-info">
           <div className="info_1">
-            <h5 style={{ paddingTop: "20px" }}>{other.username}</h5>
+            <h5 style={{ paddingTop: "20px" }}>{user.username}</h5>
             <button type="button" className="following">
               Following
             </button>
