@@ -1,7 +1,7 @@
 /* eslint-disable no-loop-func */
 import React, { useState } from "react";
 import "./index.css";
-import { FaRegHeart } from "react-icons/fa6";
+import { FaRegComment, FaRegHeart } from "react-icons/fa6";
 import { useEffect } from "react";
 import * as postClient from "../../Clients/postClient";
 import { Post } from "../../Clients/postClient";
@@ -112,7 +112,7 @@ function Home() {
             >
               {data.isLiked ? "❤️" : <FaRegHeart className="fs-2" />} Like
             </button>
-            <button className="form-btn comment-button">💬 Comment</button>
+            <button className="form-btn"> <FaRegComment className="fs-2" /> Comment</button>
           </div>
           <div className="likes-count">
             {data.likes} {data.likes === 1 ? "like" : "likes"}
